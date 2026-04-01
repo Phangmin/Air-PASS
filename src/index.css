@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  background: #ffffff;
+}
+
+@keyframes payer-workflow-ripple {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.9);
+    filter: blur(3px);
+  }
+
+  18% {
+    opacity: 0.82;
+    transform: scale(1);
+    filter: blur(8px);
+  }
+
+  48% {
+    opacity: 0.52;
+    transform: scale(1.55);
+    filter: blur(14px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.35);
+    filter: blur(24px);
+  }
+}
+
+.payer-workflow-ripple {
+  animation: payer-workflow-ripple 2.2s ease-out infinite;
+  pointer-events: none;
+}
