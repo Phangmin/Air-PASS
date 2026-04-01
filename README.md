@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/images/korea_gov_logo.png" alt="Korea Government Logo" width="90"/>
+<img src="src/assets//korea_gov_logo.png" alt="Korea Government Logo" width="90"/>
 
 # ✈️ Air-PASS
 
